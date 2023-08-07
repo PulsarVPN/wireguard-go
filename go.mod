@@ -3,6 +3,7 @@ module github.com/sagernet/wireguard-go
 go 1.20
 
 require (
+	github.com/sagernet/sing v0.7.10
 	golang.org/x/crypto v0.13.0
 	golang.org/x/net v0.15.0
 	golang.org/x/sys v0.12.0
