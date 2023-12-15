@@ -14,7 +14,6 @@ import (
 
 	"github.com/sagernet/sing/service"
 	"github.com/sagernet/sing/service/pause"
-
 	"github.com/sagernet/wireguard-go/conn"
 	"github.com/sagernet/wireguard-go/ratelimiter"
 	"github.com/sagernet/wireguard-go/rwcancel"
