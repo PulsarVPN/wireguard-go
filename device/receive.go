@@ -411,7 +411,6 @@ func (device *Device) RoutineHandshake(id int) {
 			// derive keypair
 
 			err = peer.BeginSymmetricSession()
-
 			if err != nil {
 				device.log.Errorf("%v - Failed to derive keypair: %v", peer, err)
 				goto skip
