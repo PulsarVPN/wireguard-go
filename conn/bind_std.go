@@ -128,7 +128,14 @@ func (e *StdNetEndpoint) DstToString() string {
 }
 
 func listenNet(listener Listener, network string, port int) (*net.UDPConn, int, error) {
-	conn, err := listener.ListenPacketCompat(network, ":"+strconv.Itoa(port))
+	var listenerAddr string
+	if network == "udp6" {
+		listenerAddr = "[::]:" + strconv.Itoa(port)
+	} else {
+		listenerAddr = ":" + strconv.Itoa(port)
+	}
+
+	conn, err := listener.ListenPacketCompat(network, listenerAddr)
 	if err != nil {
 		return nil, 0, err
 	}
@@ -392,6 +399,14 @@ func (s *StdNetBind) Send(bufs [][]byte, endpoint Endpoint) error {
 		retried bool
 		err     error
 	)
+	for _, buf := range bufs {
+		if len(buf) > 3 {
+			reserved, loaded := s.reservedForEndpoint[endpoint.(*StdNetEndpoint).AddrPort]
+			if loaded {
+				copy(buf[1:4], reserved[:])
+			}
+		}
+	}
 retry:
 	if offload {
 		n := coalesceMessages(ua, endpoint.(*StdNetEndpoint), bufs, *msgs, setGSOSize)
@@ -410,14 +425,6 @@ retry:
 		}
 	} else {
 		for i := range bufs {
-			bufI := bufs[i]
-			if len(bufI) > 3 {
-				reserved, loaded := s.reservedForEndpoint[endpoint.(*StdNetEndpoint).AddrPort]
-				if loaded {
-					copy(bufI[1:4], reserved[:])
-				}
-			}
-
 			(*msgs)[i].Addr = ua
 			(*msgs)[i].Buffers[0] = bufs[i]
 			setSrcControl(&(*msgs)[i].OOB, endpoint.(*StdNetEndpoint))
