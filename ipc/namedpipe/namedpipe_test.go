@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/PulsarVPN/wireguard-go/ipc/namedpipe"
+	"github.com/pulsarvpn/wireguard-go/ipc/namedpipe"
 	"golang.org/x/sys/windows"
 )
 

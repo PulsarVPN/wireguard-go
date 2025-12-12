@@ -3,8 +3,8 @@
 package device
 
 import (
-	"github.com/PulsarVPN/wireguard-go/conn"
-	"github.com/PulsarVPN/wireguard-go/rwcancel"
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/rwcancel"
 )
 
 func (device *Device) startRouteListener(bind conn.Bind) (*rwcancel.RWCancel, error) {

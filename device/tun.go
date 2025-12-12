@@ -8,7 +8,7 @@ package device
 import (
 	"fmt"
 
-	"github.com/PulsarVPN/wireguard-go/tun"
+	"github.com/pulsarvpn/wireguard-go/tun"
 )
 
 const DefaultMTU = 1420

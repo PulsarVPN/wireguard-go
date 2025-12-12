@@ -7,7 +7,7 @@
 
 package device
 
-import "github.com/PulsarVPN/wireguard-go/conn"
+import "github.com/pulsarvpn/wireguard-go/conn"
 
 const (
 	QueueStagedSize            = conn.IdealBatchSize

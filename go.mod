@@ -1,4 +1,4 @@
-module github.com/PulsarVPN/wireguard-go
+module github.com/pulsarvpn/wireguard-go
 
 go 1.18
 

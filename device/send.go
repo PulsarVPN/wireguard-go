@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/wireguard-go/conn"
-	"github.com/PulsarVPN/wireguard-go/tun"
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/tun"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"

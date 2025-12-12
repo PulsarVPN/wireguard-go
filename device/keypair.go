@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/wireguard-go/replay"
+	"github.com/pulsarvpn/wireguard-go/replay"
 	"github.com/sagernet/sing/common/atomic"
 )
 

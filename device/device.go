@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/wireguard-go/conn"
-	"github.com/PulsarVPN/wireguard-go/ratelimiter"
-	"github.com/PulsarVPN/wireguard-go/rwcancel"
-	"github.com/PulsarVPN/wireguard-go/tun"
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/ratelimiter"
+	"github.com/pulsarvpn/wireguard-go/rwcancel"
+	"github.com/pulsarvpn/wireguard-go/tun"
 	"github.com/sagernet/sing/common/atomic"
 	"github.com/sagernet/sing/service/pause"
 )

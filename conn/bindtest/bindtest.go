@@ -12,7 +12,7 @@ import (
 	"net/netip"
 	"os"
 
-	"github.com/PulsarVPN/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/conn"
 )
 
 type ChannelBind struct {

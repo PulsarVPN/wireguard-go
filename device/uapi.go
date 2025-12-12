@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/wireguard-go/ipc"
+	"github.com/pulsarvpn/wireguard-go/ipc"
 )
 
 type IPCError struct {
