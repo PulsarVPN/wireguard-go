@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/PulsarVPN/wireguard-go/ipc/namedpipe"
 	"golang.org/x/sys/windows"
-	"github.com/sagernet/wireguard-go/ipc/namedpipe"
 )
 
 func randomPipePath() string {

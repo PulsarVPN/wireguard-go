@@ -14,9 +14,9 @@ import (
 	"sync"
 	"unsafe"
 
+	"github.com/PulsarVPN/wireguard-go/conn/winrio"
 	"github.com/sagernet/sing/common/atomic"
 	"golang.org/x/sys/windows"
-	"github.com/sagernet/wireguard-go/conn/winrio"
 )
 
 const (

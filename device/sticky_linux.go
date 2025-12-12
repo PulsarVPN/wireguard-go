@@ -18,9 +18,9 @@ import (
 	"sync"
 	"unsafe"
 
+	"github.com/PulsarVPN/wireguard-go/conn"
+	"github.com/PulsarVPN/wireguard-go/rwcancel"
 	"golang.org/x/sys/unix"
-	"github.com/sagernet/wireguard-go/conn"
-	"github.com/sagernet/wireguard-go/rwcancel"
 )
 
 func (device *Device) startRouteListener(bind conn.Bind) (*rwcancel.RWCancel, error) {

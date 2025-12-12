@@ -11,12 +11,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/PulsarVPN/wireguard-go/conn"
+	"github.com/PulsarVPN/wireguard-go/ratelimiter"
+	"github.com/PulsarVPN/wireguard-go/rwcancel"
+	"github.com/PulsarVPN/wireguard-go/tun"
 	"github.com/sagernet/sing/common/atomic"
 	"github.com/sagernet/sing/service/pause"
-	"github.com/sagernet/wireguard-go/conn"
-	"github.com/sagernet/wireguard-go/ratelimiter"
-	"github.com/sagernet/wireguard-go/rwcancel"
-	"github.com/sagernet/wireguard-go/tun"
 )
 
 type Device struct {
