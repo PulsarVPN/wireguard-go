@@ -8,7 +8,7 @@ package ipc
 import (
 	"net"
 
-	"github.com/sagernet/wireguard-go/ipc/namedpipe"
+	"github.com/pulsarvpn/wireguard-go/ipc/namedpipe"
 	"golang.org/x/sys/windows"
 )
 

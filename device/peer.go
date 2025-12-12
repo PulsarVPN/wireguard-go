@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/sagernet/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/conn"
 )
 
 type Peer struct {

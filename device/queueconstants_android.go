@@ -5,7 +5,7 @@
 
 package device
 
-import "github.com/sagernet/wireguard-go/conn"
+import "github.com/pulsarvpn/wireguard-go/conn"
 
 /* Reduce memory consumption for Android */
 

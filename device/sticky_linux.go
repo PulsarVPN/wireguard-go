@@ -18,8 +18,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/sagernet/wireguard-go/conn"
-	"github.com/sagernet/wireguard-go/rwcancel"
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/rwcancel"
 	"golang.org/x/sys/unix"
 )
 

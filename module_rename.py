@@ -7,7 +7,7 @@ import fileinput
 
 
 PKG_ORIGINAL = "github.com/tailscale/wireguard-go"
-PKG_NEW = "github.com/sagernet/wireguard-go"
+PKG_NEW = "github.com/pulsarvpn/wireguard-go"
 
 EXTENSIONS = [".go", ".md", ".mod", ".sh"]
 

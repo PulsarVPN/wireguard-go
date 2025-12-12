@@ -1,4 +1,4 @@
-module github.com/sagernet/wireguard-go
+module github.com/pulsarvpn/wireguard-go
 
 go 1.23.6
 

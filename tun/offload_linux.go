@@ -13,7 +13,7 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/sagernet/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/conn"
 	"golang.org/x/sys/unix"
 )
 

@@ -15,11 +15,11 @@ import (
 	"github.com/sagernet/sing/service"
 	"github.com/sagernet/sing/service/pause"
 
-	"github.com/sagernet/wireguard-go/conn"
-	"github.com/sagernet/wireguard-go/ipc"
-	"github.com/sagernet/wireguard-go/ratelimiter"
-	"github.com/sagernet/wireguard-go/rwcancel"
-	"github.com/sagernet/wireguard-go/tun"
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/ipc"
+	"github.com/pulsarvpn/wireguard-go/ratelimiter"
+	"github.com/pulsarvpn/wireguard-go/rwcancel"
+	"github.com/pulsarvpn/wireguard-go/tun"
 	"github.com/tevino/abool/v2"
 )
 
